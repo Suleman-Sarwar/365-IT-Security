@@ -1,0 +1,11 @@
+// Check File Hash
+let GetFileHashRelatedAlerts = (v_FileHash_Value: string) {
+    SecurityAlert
+    | summarize arg_max(TimeGenerated, *) by SystemAlertId
+    | extend entities = todynamic(Entities) 
+    | mv-expand entities
+    | project-rename entity=entities
+    | where entity['Type'] == 'filehash' and entity['Value'] =~ v_FileHash_Value
+    | project-away entity
+};
+GetFileHashRelatedAlerts(@'4fffe53174f3f9ee71ef919e3ce3bd43d23a7464')

@@ -1,0 +1,15 @@
+# Install ORCA Module
+Install-Module -Name ORCA -Force
+
+# Check ORCA Module (optional)
+Get-Module ORCA | fl
+Get-Module ORCA | gm
+
+# Connect Exchange Online PowerShell
+$UserCredential = Get-Credential
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+Import-PSSession $Session -DisableNameChecking
+
+# Running ORCA 
+Get-ORCAReport # option 1
+Get-ORCAReport -NoUpdate -Output C:\temp\ORCAReport.htm #option 2

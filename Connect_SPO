@@ -1,0 +1,8 @@
+#Install SPO Module
+Install-Module -Name Microsoft.Online.SharePoint.PowerShell -Scope CurrentUser
+
+#Login to SPO
+$adminUPN="admin@domain.com"
+$orgName="sharepoint org"
+$userCredential = Get-Credential -UserName $adminUPN -Message "Type the password."
+Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential

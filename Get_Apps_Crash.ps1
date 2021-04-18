@@ -1,0 +1,2 @@
+## Get all application crashes in specific time from event log and sorted by the most crash apps
+PS C:\Windows\system32> Get-WinEvent -FilterHashtable @{'providername' = 'Windows Error Reporting';starttime=(Get-Date).AddDays(-2);Id=1001 } | Select TimeCreated,@{n='App';e={$_.Properties[5].value}} | Group-Object -Property App | Select-Object -Property Name,Count | Sort-Object -Property Count -Descending

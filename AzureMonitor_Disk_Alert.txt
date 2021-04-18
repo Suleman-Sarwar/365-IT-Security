@@ -1,0 +1,9 @@
+Perf
+| where TimeGenerated > (datetime(2021-04-07T17:11:29.0000000) - 1h)
+| where ObjectName contains "LogicalDisk" and CounterName == "Free Megabytes" 
+| where InstanceName !contains "D:"
+| where InstanceName != "HarddiskVolume1"
+| where InstanceName !contains "_Total" 
+| extend FreeSpaceGB = CounterValue / 1024
+| summarize FreeSpace = min(FreeSpaceGB) by Computer, InstanceName
+| where FreeSpace < 20

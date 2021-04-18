@@ -1,0 +1,38 @@
+# Create Azure AD Dynamic Based Groups and Titles
+$groups = @(
+    "Group 1"
+    "Group 2"
+)
+$Titles = @(
+    "Group 1 title"
+    "Group 2 title"
+    "Office"
+)
+$WhatIfPreference = $true
+$VerbosePreference = "Continue"
+$groups | ForEach-Object {
+#-------------------------------------------------------------------------------------------------------
+# Generate DisplayName and Filter
+    $DisplayName = "Dyn - {0}" -f $_
+    $Filter = '(user.department -eq "{0}") -and (user.jobTitle -in ["{1}"])' -f $_, ($Titles -join '","')
+#-------------------------------------------------------------------------------------------------------
+# Find existing any group
+    $existingGroup = Get-AzureADMSGroup -Filter "displayName eq '$($DisplayName)'"
+    if(!$existingGroup) {
+        if(!$WhatIfPreference) {
+            Write-Verbose "Creating $($DisplayName)"
+            New-AzureADMSGroup -MembershipRule $Filter -DisplayName $DisplayName -SecurityEnabled:$true -MailEnabled:$true -MailNickname ([guid]::NewGuid().ToString()) -MembershipRuleProcessingState "On" -GroupTypes @("DynamicMembership") | Out-Null
+        } else {
+            Write-Verbose "WHATIF: Creating $($DisplayName)"
+        }
+    } else {
+        if($existingGroup.MembershipRule -cne $Filter) {
+            if(!$WhatIfPreference) {
+                Write-Verbose "Updating membershiprule for $($DisplayName)"
+                Set-AzureADMSGroup -Id $existingGroup.Id -MembershipRule $Filter
+            } else {
+            Write-Verbose "WHATIF: Creating $($DisplayName)"
+            }
+        }
+    }    
+} 
