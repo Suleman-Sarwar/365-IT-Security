@@ -24,8 +24,8 @@ Connect-AzAccount # Optional and not required if Login to Azure is configured
 # --------------------------------------------------
 # Purpose Connect to Azure Cosmos DB
 # --------------------------------------------------
-$resourceGroupName = "M5" # Resource Group must already exist
-$accountName = "acdb-1" # Must be all lower case
+$resourceGroupName = "Resource Group" # Resource Group must already exist
+$accountName = "Azure Cosmos DB Name" # Must be all lower case
 $keyKind = "primary" # Other key kinds: secondary, primaryReadOnly, secondaryReadOnly
 
 # --------------------------------------------------
