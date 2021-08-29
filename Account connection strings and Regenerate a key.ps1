@@ -2,6 +2,10 @@
 # Purpose: Account connection strings and Regenerate a key
 # --------------------------------------------------
 
+# --------------------------------------------------
+# Reference: Az.CosmosDB | https://docs.microsoft.com/powershell/module/az.cosmosdb
+# --------------------------------------------------
+Install-Module Az.CosmosDB -AllowClobber -Confirm:$False -Force  
 
 # --------------------------------------------------
 # Purpose: Login to Azure
@@ -14,15 +18,11 @@
 # Connect-AzAccount -Credential $Credential -Tenant $tenant -Subscription $subscription
 # --------------------------------------------------
 
-# --------------------------------------------------
-# Reference: Az.CosmosDB | https://docs.microsoft.com/powershell/module/az.cosmosdb
-# --------------------------------------------------
-Install-Module Az.CosmosDB -AllowClobber -Confirm:$False -Force  
-
+# Optional: Login to Azure  # Optional and not required if Login to Azure is configured
 Connect-AzAccount # Optional and not required if Login to Azure is configured
 
 # --------------------------------------------------
-# Purpose Connect to Azure Cosmos DB
+# Purpose: Connect to Azure Cosmos DB
 # --------------------------------------------------
 $resourceGroupName = "Resource Group" # Resource Group must already exist
 $accountName = "Azure Cosmos DB Name" # Must be all lower case
