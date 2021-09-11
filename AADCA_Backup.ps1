@@ -1,7 +1,7 @@
 # Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 # Install-Module AzureAD 
 
-----------------------------------------------------------
+# --------------------------------------------------------
 
 # Set Paramaters 
 param(
@@ -11,7 +11,7 @@ param(
 # Connect to Azure AD
 Connect-AzureAD
 
-----------------------------------------------------------
+# --------------------------------------------------------
 
 # Backup Azure AD CA Policies
 $AllPolicies = Get-AzureADMSConditionalAccessPolicy
