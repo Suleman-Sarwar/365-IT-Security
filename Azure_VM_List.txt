@@ -1,0 +1,7 @@
+// Azure VM list via  Azure Resource Graph
+Resources
+ | where type =~ 'Microsoft.Compute/virtualMachines'
+ | join kind=leftouter (ResourceContainers | where type=='microsoft.resources/subscriptions' 
+ | project SubName=name, subscriptionId) on subscriptionId
+ | project name, properties.hardwareProfile.vmSize, SubName, location, resourceGroup
+ | order by name desc
