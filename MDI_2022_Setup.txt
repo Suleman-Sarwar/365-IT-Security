@@ -1,0 +1,5 @@
+### Defender for Identity, Npcap on Windows Server 2022 # Temp Solution (October 21)
+# Install npcap with winPcap mode activated and loopback support disabled
+.\Npcap\npcap-1.00-oem.exe /S /winpcap_mode=yes /loopback_support=no
+# Install MDI Agent
+.\"Azure ATP Sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="Put your MDI access Key here" ProxyUrl="http://MDI Proxy URL"
