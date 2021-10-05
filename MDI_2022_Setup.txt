@@ -3,3 +3,5 @@
 .\Npcap\npcap-1.00-oem.exe /S /winpcap_mode=yes /loopback_support=no
 # Install MDI Agent
 .\"Azure ATP Sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="Put your MDI access Key here" ProxyUrl="http://MDI Proxy URL"
+
+Note: ProxyUrl not required for all scenario's
