@@ -6,4 +6,4 @@ DeviceEvents
     ProductName=tostring(ParsedFields.ProductName), 
     Manufacturer=tostring(ParsedFields.Manufacturer),
     DriveLetter=tostring(ParsedFields.DriveLetter), 
-    LoggedOnUsers=tostring(ParsedFields.LoggedOnUsers),ReportId, ActionType
+    LoggedOnUsers=tostring(ParsedFields.LoggedOnUsers),ReportId, ActionType, DeviceId
