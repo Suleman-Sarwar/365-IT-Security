@@ -1,4 +1,4 @@
-﻿#Enable ASR Audit for Windows 10 
+﻿# Enable Attack Surface Reducation in Audit Mode for Windows 10 
 
 Write-Host "Enabling WD Exploit Guard scenarios in audit mode." -ForegroundColor Green
 
@@ -18,6 +18,5 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids 5BEB7EFE-FD9A-4556-801D-275E5F
 Add-MpPreference -AttackSurfaceReductionRules_Ids BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550 -AttackSurfaceReductionRules_Actions AuditMode
 #Block Win32 imports from Macro code in Office
 Add-MpPreference -AttackSurfaceReductionRules_Ids 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B -AttackSurfaceReductionRules_Actions AuditMode
-
 
 Write-Host "Successfully enabled Windows Defender Exploit Guard scenarios in audit mode." -ForegroundColor Green
