@@ -1,9 +1,9 @@
 # This PowerShell script provide a quick report about the Office 365 MFA for configured and unconfigured users.
 # This PowerShell required Office 365 read-only permissions
 Connect-MsolService
-Write-Host "Finding Azure AD Accounts"
+Write-Host "Checking for Azure AD Accounts"
 $Users = Get-MsolUser -All | ? { $_.UserType -ne "Guest" }
-$Report = [System.Collections.Generic.List[Object]]::new() # Create output file
+$Report = [System.Collections.Generic.List[Object]]::new() 
 Write-Host "Checking" $Users.Count "Azure AD Accounts"
 ForEach ($User in $Users) {
     $MFAEnforced = $User.StrongAuthenticationRequirements.State
