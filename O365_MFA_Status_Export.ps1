@@ -33,6 +33,6 @@ ForEach ($User in $Users) {
     $Report.Add($ReportLine)
 }
 
-Write-Host "Report is in c:\temp\MFAUsers.CSV"
+Write-Host "Report is in C:\Temp\O365MFAUsers.CSV"
 $Report | Select User, Name, MFAUsed, MFAMethod, PhoneNumber
 $Report | Sort Name | Export-CSV -NoTypeInformation C:\Temp\O365MFAUsers.csv
