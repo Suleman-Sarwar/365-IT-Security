@@ -21,7 +21,6 @@ ForEach ($User in $Users) {
         $MFAEnforced = "Not Enabled"
         $MethodUsed = "MFA Not Used"
     }
-
     $ReportLine = [PSCustomObject] @{
         User        = $User.UserPrincipalName
         Name        = $User.DisplayName
@@ -29,10 +28,8 @@ ForEach ($User in $Users) {
         MFAMethod   = $MethodUsed
         PhoneNumber = $MFAPhone
     }
-
     $Report.Add($ReportLine)
 }
-
 Write-Host "Report is in C:\Temp\O365MFAUsers.CSV"
 $Report | Select User, Name, MFAUsed, MFAMethod, PhoneNumber
 $Report | Sort Name | Export-CSV -NoTypeInformation C:\Temp\O365MFAUsers.csv
