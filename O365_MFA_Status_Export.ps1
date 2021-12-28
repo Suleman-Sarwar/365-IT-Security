@@ -1,5 +1,5 @@
 # This PowerShell script provide a quick report about the Office 365 MFA for configured and unconfigured users.
-# This PowerShell Office 365 read only permissions
+# This PowerShell required Office 365 read-only permissions
 Connect-MsolService
 Write-Host "Finding Azure AD Accounts"
 $Users = Get-MsolUser -All | ? { $_.UserType -ne "Guest" }
