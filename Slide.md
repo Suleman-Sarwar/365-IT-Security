@@ -55,12 +55,6 @@ size: 16:9
 
 ---
 
-# Show Time
-
-- 
-
----
-
 # **Tips & Tricks**
 
 ## Custom URL's
@@ -75,6 +69,7 @@ https://vscode.dev/azurerepos/organization/project/repo
 - VSCode.Dev Insider 
 https://insiders.vscode.dev.
 
+![bg](https://memegenerator.net/img/instances/56299385/show-me-your-tips.jpg)
 ---
 
 # **Tips & Tricks**
