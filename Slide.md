@@ -53,7 +53,7 @@ size: 16:9
 ---
 
 # **Tips & Tricks**
-![bg](https://memegenerator.net/img/instances/56299385/show-me-your-tips.jpg)
+
 ## Custom URL's
 
 - Navigate to Repo directly
@@ -67,6 +67,8 @@ https://vscode.dev/azurerepos/organization/project/repo
 
 - VSCode.Dev Insider 
 https://insiders.vscode.dev.
+
+![bg](https://memegenerator.net/img/instances/56299385/show-me-your-tips.jpg)
 
 ## Extensions
 - GitHub Issue Notebooks
