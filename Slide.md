@@ -69,10 +69,6 @@ https://vscode.dev/azurerepos/organization/project/repo
 - VSCode.Dev Insider 
 https://insiders.vscode.dev.
 
----
-
-# **Tips & Tricks**
-
 ## Extensions
 - GitHub Issue Notebooks
 - Python, TypeScript, C#, Yaml, etc.
