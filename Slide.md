@@ -43,9 +43,6 @@ size: 16:9
 - GitHub & Azure Repos
 
 ![bg](https://i.imgflip.com/2rxr4x.jpg)
----
-
-# **Don't stop the Music**
 
 - Saving and sharing work
 - Language support
