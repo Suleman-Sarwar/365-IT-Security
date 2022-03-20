@@ -19,6 +19,6 @@ size: 16:9
 
 ---
 
-![bg strech](https://geekmasher.dev/media/memes/HotlineBling-Marp.jpg)
+![bg](https://geekmasher.dev/media/memes/HotlineBling-Marp.jpg)
 
 ---
