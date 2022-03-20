@@ -15,6 +15,8 @@ size: 16:9
 - Tips & Tricks
 - Questions & Stuff
 
+![bgl](https://misconfig.io/wp-content/uploads/2022/03/screenshot_75.png)
+
 ---
 
 # Slide Deck on Web
