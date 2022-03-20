@@ -78,5 +78,14 @@ https://insiders.vscode.dev.
 # **Tips & Tricks**
 
 ## Extensions
-## 
-## 
+- GitHub Issue Notebooks
+- Python, TypeScript, C#, Yaml, etc.
+- Prettier - Code formatter 
+- Vim emulation for Visual Studio Code
+- Marp for VS Code
+- Theme's
+
+---
+
+# **Pull Until The End Of Time**
+
