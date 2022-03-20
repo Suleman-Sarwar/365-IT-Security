@@ -19,8 +19,6 @@ size: 16:9
 
 ---
 
-# Slide Deck on Web
-
-![bgt](https://geekmasher.dev/media/memes/HotlineBling-Marp.jpg)
+![bg strech](https://geekmasher.dev/media/memes/HotlineBling-Marp.jpg)
 
 ---
