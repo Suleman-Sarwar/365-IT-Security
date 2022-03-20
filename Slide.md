@@ -62,8 +62,10 @@ size: 16:9
 - Navigate to Repo directly
 https://vscode.dev/SOURCE/ORG/REPO
 
-- Route to GitHub and Azure Repos
+- Route to GitHub 
 https://vscode.dev/github/organization/repo
+
+- Route to Azure Repos
 https://vscode.dev/azurerepos/organization/project/repo
 
 - VSCode.Dev Insider 
