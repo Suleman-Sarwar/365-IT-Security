@@ -31,7 +31,6 @@ size: 16:9
 ### Cybersecurity Geek
 ### [Watch Me on LinkedIn](https://www.linkedin.com/in/elishlomo/)
 ### [Star Me on GitHub](https://github.com/eshlomo1)
-
 ![bg right](https://github.com/eshlomo1/eshlomo1/blob/master/ElliShlomo.png)
 ---
 
