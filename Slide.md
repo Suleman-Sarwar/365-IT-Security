@@ -32,7 +32,7 @@ size: 16:9
 ### [Watch Me on LinkedIn](https://www.linkedin.com/in/elishlomo/)
 ### [Star Me on GitHub](https://github.com/eshlomo1)
 
-![bg](https://avatars.githubusercontent.com/u/36914463?v=4)
+![bg](https://github.com/eshlomo1/eshlomo1/blob/master/ElliShlomo.png)
 ---
 
 # **Let The Game Begin**
