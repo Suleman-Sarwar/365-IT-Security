@@ -19,7 +19,64 @@ size: 16:9
 
 ---
 
-# **From Powerpoint to Marp**
+# **From Powerpoint to Markdown**
 ![bg](https://geekmasher.dev/media/memes/HotlineBling-Marp.jpg)
 
 ---
+
+# **Me in a Nutshell**
+
+### Elli Shlomo
+### Microsoft MVP 
+### Cybersecurity Geek
+### [Watch Me on LinkedIn](https://www.linkedin.com/in/elishlomo/)
+
+---
+
+# **Let The Game Begin**
+
+- VSCode for the Web
+- Continue working in a different environment
+- Relationship to VSCode desktop
+- Opening a project
+- GitHub & Azure Repos
+
+---
+
+# **Don't stop the Music**
+
+- Saving and sharing work
+- Language support
+- Limitations
+- Browser support
+- Safe exploration
+
+---
+
+# Show Time
+
+- 
+
+---
+
+# **Tips & Tricks**
+
+## Custom URL's
+
+- Navigate to Repo directly
+https://vscode.dev/SOURCE/ORG/REPO
+
+- Route to GitHub and Azure Repos
+https://vscode.dev/github/organization/repo
+https://vscode.dev/azurerepos/organization/project/repo
+
+- VSCode.Dev Insider 
+https://insiders.vscode.dev.
+
+---
+
+# **Tips & Tricks**
+
+## Extensions
+## 
+## 
