@@ -41,6 +41,7 @@ size: 16:9
 - Relationship to VSCode desktop
 - Opening a project
 - GitHub & Azure Repos
+
 ![bg](https://i.imgflip.com/2rxr4x.jpg)
 ---
 
