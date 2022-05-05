@@ -17,4 +17,4 @@ function Invoke-BadPWD{
     }}
 
 # Import-Module C:\Users\userid\Attack-BADPWD.ps1
-#Invoke-BadPWD -File wordlist.txt -user userid
+#Invoke-BadPWD -File list.txt -user UPN-ID
