@@ -1,4 +1,4 @@
-function Invoke-BadPass{
+function Invoke-BadPWD{
 
     param (
         [Parameter(Mandatory=$true)]
