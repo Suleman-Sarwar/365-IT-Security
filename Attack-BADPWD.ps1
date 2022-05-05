@@ -16,5 +16,5 @@ function Invoke-BadPWD{
             Write-Host "Change password for:... " $user : $password -ForegroundColor Green "[*] Success"}
     }}
 
-# Import-Module C:\Users\userid\Attack-BADPWD.ps1
+#Import-Module C:\Users\userid\Attack-BADPWD.ps1
 #Invoke-BadPWD -File list.txt -user UPN-ID
