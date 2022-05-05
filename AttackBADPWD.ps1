@@ -1,6 +1,6 @@
-#This script intends to check Azure AD Password Protection for weak passwords. 
-#Make sure you run this in an elevated administrative PowerShell session. RSAT tools and password reset capability is required.
-#This script can be run against a list. 
+# This script intends to check Azure AD Password Protection for weak passwords. 
+# Make sure you run this in an elevated administrative PowerShell session. RSAT tools and password reset capability is required.
+# This script can be run against your own list. 
 # >>> First, test the script in a lab environment, and run it carefully on a test user!!!!!
 
 function Invoke-AttackBADPWD{
