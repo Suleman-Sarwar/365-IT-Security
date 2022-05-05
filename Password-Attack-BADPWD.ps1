@@ -6,7 +6,7 @@ function Invoke-BadPWD{
         [string]$user
     )
     
-    if (!$File) {Write-Host "Invalid file path..."; break}
+    if (!$File) {Write-Host "Invalid file..."; break}
 
     $Passwords = Get-Content $File
     $Error = $false
@@ -18,10 +18,10 @@ function Invoke-BadPWD{
      If ($ProcessError)
         {
             
-            Write-Host "Changing password for: " $user : $password -ForegroundColor Red "[*] Failed!"}
+            Write-Host "Changing password for:... " $user : $password -ForegroundColor Red "[*] Failed"}
     Else{
 
-            Write-Host "Changing password for: " $user : $password -ForegroundColor Green "[*] Success!"}
+            Write-Host "Changing password for:... " $user : $password -ForegroundColor Green "[*] Success"}
     
 }}
 
