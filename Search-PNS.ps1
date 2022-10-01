@@ -7,10 +7,10 @@
     	https://www.gteltsc.vn/blog/warning-new-attack-campaign-utilized-a-new-0day-rce-vulnerability-on-microsoft-exchange-server-12715.html 
         
 	Tested on the following Exchange Version
-        - Exchange 2016
-        - Exchange 2019
-        - Windows Server 2016 (Based on)
-        - Windows Server 2019 (Based on)
+         - Exchange 2016
+         - Exchange 2019
+         - Windows Server 2016 (Based on)
+         - Windows Server 2019 (Based on)
         
     .Folders
     	You can change the Exchange Version folders as required
