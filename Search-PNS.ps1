@@ -32,11 +32,6 @@ $SuspiciousFiles = @(
 "C:\Users\Public\dump.dll",
 "C:\PerfLogs\gpg-error.exe",
 "C:\Program Files\Common Files\system\ado\msado32.tlb",
-"%ProgramFiles%\Microsoft\ExchangeServer\V15\FrontEnd\HttpProxy\owa\auth\xml.ashx",
-"%ProgramFiles%\Microsoft\ExchangeServer\V15\FrontEnd\HttpProxy\owa\auth\errorEE.aspx",
-"%ProgramFiles%\Microsoft\ExchangeServer\V15\FrontEnd\HttpProxy\owa\auth\Pxh4HG1v.ashx",
-"%ProgramFiles%\Microsoft\ExchangeServer\V15\FrontEnd\HttpProxy\owa\auth\RedirSuiteServiceProxy.aspx",
-"%ProgramFiles%\Microsoft\ExchangeServer\V15\FrontEnd\HttpProxy\owa\auth\RedirSuiteServiceProxy.aspx",
 )
 
 foreach ($SuspiciousFile in $SuspiciousFiles) {
