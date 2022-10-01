@@ -1,18 +1,20 @@
 <#
     .NOTES
-        Search for Exchange Zero-Day ProxyNotShell IOCs on Folders, Logs, and WebShell.
-    
+        Search for Exchange Zero-Day ProxyNotShell IOCs on folders, logs, and WebShell.
+        
     .DESCRIPTION
     	New attack campaign utilized a new 0-day RCE vulnerability on Microsoft Exchange Server
     	https://www.gteltsc.vn/blog/warning-new-attack-campaign-utilized-a-new-0day-rce-vulnerability-on-microsoft-exchange-server-12715.html 
-    
-    .Version Support   
+        
 	Tested on the following Exchange Version
         - Exchange 2016
         - Exchange 2019
         - Windows Server 2016 (Based on)
         - Windows Server 2019 (Based on)
-     
+        
+    .Folders
+    	You can change the Exchange Version folders as required
+      
     .EXAMPLE
         .\Search-ExchangeProxyNotShell.ps1
 #>
