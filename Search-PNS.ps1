@@ -100,6 +100,7 @@ $WebShellArray.Add($Webshell1) | out-null
 $WebShellArray.Add($Webshell2) | out-null
 $WebShellArray.Add($Webshell3) | out-null
 $WebShellArray.Add($Webshell4) | out-null
+$WebShellArray.Add($Webshell5) | out-null
 
 foreach ($WebShell in $WebShellArray) {
 	$WebshellPath = "$exinstall" + $WebShell.Name
