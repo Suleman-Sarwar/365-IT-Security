@@ -3,14 +3,17 @@
         Search for Exchange Zero-Day ProxyNotShell IOCs on Folders, Logs, and WebShell.
         
     .DESCRIPTION
-        Tested on the following Exchange Version
+    	New attack campaign utilized a new 0-day RCE vulnerability on Microsoft Exchange Server
+    	https://www.gteltsc.vn/blog/warning-new-attack-campaign-utilized-a-new-0day-rce-vulnerability-on-microsoft-exchange-server-12715.html 
+        
+	Tested on the following Exchange Version
         - Exchange 2016
         - Exchange 2019
         - Windows Server 2016 (Based on)
         - Windows Server 2019 (Based on)
         
     .Folders
-      You can change the Exchange Version folders as required
+    	You can change the Exchange Version folders as required
       
     .EXAMPLE
         .\Search-ExchangeProxyNotShell.ps1
@@ -88,6 +91,12 @@ $Webshell4 = [PSCustomObject]@{
     Name = "FrontEnd\HttpProxy\owa\auth\errorEE.aspx"
     Hash = "be07bd9310d7a487ca2f49bcdaafb9513c0c8f99921fdf79a05eaba25b52d257"
 }
+$Webshell5 = [PSCustomObject]@{
+	ID = 5
+    Name = "C:\Program Files\Microsoft\Exchange Server\V15\FrontEnd\HttpProxy\owa\auth\pxh4HG1v.ashx"
+    Hash = "c838e77afe750d713e67ffeb4ec1b82ee9066cbe21f11181fd34429f70831ec1"
+}
+
 [System.Collections.ArrayList]$WebShellArray = @()
 $WebShellArray.Add($Webshell1) | out-null
 $WebShellArray.Add($Webshell2) | out-null
